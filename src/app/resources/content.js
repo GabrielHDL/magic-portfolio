@@ -28,24 +28,29 @@ const social = [
   // Links visibles automáticamente.
   // Importa nuevos íconos en /once-ui/icons.ts
   {
-    name: "GitHub",
-    icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    name: "Facebook",
+    icon: "facebook",
+    link: "https://www.facebook.com/latomx.agency",
   },
   {
-    name: "LinkedIn",
-    icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    name: "Instagram",
+    icon: "instagram",
+    link: "https://www.instagram.com/latoagency",
   },
-  {
-    name: "X", // antes Twitter
-    icon: "x",
-    link: "",
-  },
+  // {
+  //   name: "LinkedIn",
+  //   icon: "linkedin",
+  //   link: "https://www.linkedin.com/company/once-ui/",
+  // },
+  // {
+  //   name: "X", // antes Twitter
+  //   icon: "x",
+  //   link: "",
+  // },
   {
     name: "Email",
     icon: "email",
-    link: "mailto:example@gmail.com",
+    link: "mailto:hola@lato.agency",
   },
 ];
 
