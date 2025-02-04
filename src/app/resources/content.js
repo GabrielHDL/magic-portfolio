@@ -1,31 +1,32 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Lato",
+  lastName: "Agency",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  role: "Agencia Digital Creativa",
+  avatar: "/images/logo/profile_bck.png",
+  location: "America/Mexico_City", // IANA time zone
+  languages: ["Español", "English"], // Puedes dejarlo vacío si no deseas mostrar idiomas
 };
 
 const newsletter = {
   display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
+  title: <>Suscríbete a las novedades de {person.firstName}</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      Ocasionalmente compartimos ideas sobre branding, tecnología e ingeniería
+      de software, y reflexiones sobre la intersección entre la creatividad y la
+      innovación.
     </>
   ),
 };
 
 const social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
+  // Links visibles automáticamente.
+  // Importa nuevos íconos en /once-ui/icons.ts
   {
     name: "GitHub",
     icon: "github",
@@ -37,7 +38,7 @@ const social = [
     link: "https://www.linkedin.com/company/once-ui/",
   },
   {
-    name: "X",
+    name: "X", // antes Twitter
     icon: "x",
     link: "",
   },
@@ -50,21 +51,20 @@ const social = [
 
 const home = {
   label: "Home",
-  title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Design engineer and builder</>,
+  title: `${person.name}`,
+  description: `Este sitio muestra nuestro trabajo como ${person.role}`,
+  headline: <>Agencia Digital Creativa</>,
   subline: (
     <>
-      I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      Somos Lato Agency, con sede en la Ciudad de México, donde diseñamos experiencias intuitivas que fusionan branding, ingeniería de software y marketing digital para potenciar marcas y negocios en el mundo digital.
     </>
   ),
 };
 
 const about = {
-  label: "About",
-  title: "About me",
-  description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+  label: "Nosotros",
+  title: "Sobre Nosotros",
+  description: `Conoce a ${person.name}, ${person.role} de ${person.location}`,
   tableOfContent: {
     display: true,
     subItems: false,
@@ -78,93 +78,116 @@ const about = {
   },
   intro: {
     display: true,
-    title: "Introduction",
+    title: "Introducción",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Lato Agency es una agencia digital creativa con sede en la Ciudad de
+        México, especializada en branding e ingeniería de software. Nuestro
+        objetivo es convertir retos complejos en soluciones ágiles y
+        atractivas, abarcando interfaces digitales, experiencias interactivas y
+        la convergencia entre diseño y tecnología.
       </>
     ),
   },
   work: {
-    display: true, // set to false to hide this section
-    title: "Work Experience",
+    display: true,
+    title: "Experiencia",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Lato Agency",
+        timeframe: "2023 - Presente",
+        role: "Agencia Digital Creativa",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            En 2023 evolucionamos de <strong>Houdle</strong> a <strong>Lato</strong> para adaptarnos a las nuevas tecnologías y tendencias del mercado.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Hemos colaborado con marcas para crear y desarrollar identidades
+            visuales sólidas, aumentando su engagement digital de manera
+            significativa.
+          </>,
+          <>
+            Implementamos soluciones de software a medida con un enfoque en
+            escalabilidad e integración de tecnologías modernas.
           </>,
         ],
         images: [
-          // optional: leave the array empty if you don't want to display images
           {
             src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
+            alt: "Proyecto Once UI",
             width: 16,
             height: 9,
           },
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Houdle",
+        timeframe: "2019 - 2023",
+        role: "Agencia Digital y Software",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Durante esta etapa, consolidamos una agencia con un enfoque en branding, diseño y desarrollo de software.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Creamos estrategias digitales innovadoras para marcas emergentes y consolidadas, optimizando su posicionamiento en el mercado.
+          </>,
+          <>
+            Implementamos soluciones tecnológicas personalizadas, enfocadas en UI/UX y escalabilidad.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Proyectos Anteriores",
+        timeframe: "Antes de 2019",
+        role: "Branding & Desarrollo",
+        achievements: [
+          <>
+            Realizamos proyectos freelance para pymes y emprendimientos,
+            fortaleciendo su presencia digital y desarrollando estrategias de
+            marca.
+          </>,
+          <>
+            Participación en iniciativas open-source, aportando experiencia en
+            diseño de interfaces y desarrollo front-end.
           </>,
         ],
         images: [],
       },
     ],
   },
+  
   studies: {
-    display: true, // set to false to hide this section
+    display: false,
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Universidad de la Ciudad de México",
+        description: <>Ingeniería de software y fundamentos de desarrollo.</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Especializaciones en Branding",
+        description: <>Cursos y diplomados en marketing online y estrategia de marca.</>,
       },
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
-    title: "Technical skills",
+    display: true,
+    title: "Tecnologías",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
+        title: "React",
+        description: <>Construimos interfaces dinámicas y altamente interactivas con React.</>,
         images: [
           {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
+            src: "/images/stack/react/1_qksBcJJdqxLgDGsywG8lQQ.webp",
+            alt: "Interfaz desarrollada con React",
             width: 16,
             height: 9,
           },
           {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
+            src: "/images/stack/react/Meta-1024x683.png",
+            alt: "Aplicación con componentes de React",
             width: 16,
             height: 9,
           },
@@ -172,42 +195,156 @@ const about = {
       },
       {
         title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
+        description: <>Creamos aplicaciones de alto rendimiento con Next.js, optimizando SEO y carga rápida.</>,
         images: [
           {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
+            src: "/images/stack/nextjs/nextjs3.webp",
+            alt: "Proyecto desarrollado con Next.js",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "Laravel",
+        description: <>Desarrollamos backends robustos y escalables con Laravel.</>,
+        images: [
+          {
+            src: "/images/stack/laravel/0_oUyjZH6_leRq64sQ.png",
+            alt: "Backend construido con Laravel",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "Tailwind CSS",
+        description: <>Creamos diseños modernos y responsivos con Tailwind CSS para una mejor experiencia de usuario.</>,
+        images: [
+          {
+            src: "/images/stack/tailwindcss/64b524021adc5990918944.png",
+            alt: "Interfaz estilizada con Tailwind CSS",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/stack/tailwindcss/tailwind2.png",
+            alt: "Componentes estilizados con Tailwind",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "Strapi",
+        description: <>Utilizamos Strapi como CMS Headless para la gestión de contenido flexible y eficiente.</>,
+        images: [
+          {
+            src: "/images/stack/strapi/meta.CuOjROfl_2ooYIw.webp",
+            alt: "Sistema de gestión de contenido con Strapi",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "Inteligencia Artificial (IA)",
+        description: <>Desarrollamos soluciones con IA para automatización, análisis predictivo y asistentes conversacionales.</>,
+        images: [
+          {
+            src: "/images/stack/ia/GettyImages-1462188043-e1686340799615.webp",
+            alt: "Soluciones de IA en Lato Agency",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "Machine Learning",
+        description: <>Implementamos modelos de Machine Learning para análisis de datos y personalización de experiencias.</>,
+      },
+      {
+        title: "Illustrator",
+        description: <>Creamos gráficos vectoriales de alta calidad para branding y diseño digital.</>,
+        images: [
+          {
+            src: "/images/stack/illustrator/illustrator.png",
+            alt: "Diseño en Adobe Illustrator",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "Photoshop",
+        description: <>Edición avanzada de imágenes y retoque digital con Adobe Photoshop.</>,
+        images: [
+          {
+            src: "/images/stack/photoshop/photoshop.png",
+            alt: "Proyecto de edición en Photoshop",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "Adobe Premiere Pro",
+        description: <>Edición y postproducción de videos profesionales con Adobe Premiere Pro.</>,
+        images: [
+          {
+            src: "/images/stack/premiere/premiere.jpeg",
+            alt: "Proyecto de edición de video en Premiere Pro",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "Cinema 4D",
+        description: <>Modelado y animación 3D para renders y contenido visual.</>,
+        images: [
+          {
+            src: "/images/stack/cinema4d/7f056e_04220e7cf28e487cb154d589445a5961~mv2.jpg",
+            alt: "Render 3D en Cinema 4D",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "Adobe XD",
+        description: <>Diseño de interfaces de usuario y prototipos interactivos con Adobe XD.</>,
+        images: [
+          {
+            src: "/images/stack/adobe-xd/Adobe-XD-CC-Featured-Image.png.webp",
+            alt: "Prototipo en Adobe XD",
             width: 16,
             height: 9,
           },
         ],
       },
     ],
-  },
+  },  
 };
 
 const blog = {
   label: "Blog",
-  title: "Writing about design and tech...",
-  description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
+  title: "Noticias y reflexiones sobre diseño y tecnología",
+  description: `Lee lo más reciente de ${person.name} y descubre nuestras ideas sobre branding y desarrollo.`,
+  // Agrega nuevas entradas .mdx en app/blog/posts
 };
 
 const work = {
-  label: "Work",
-  title: "My projects",
-  description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
-  // All projects will be listed on the /home and /work routes
+  label: "Proyectos",
+  title: "Proyectos",
+  description: `Descubre proyectos de branding y desarrollo de ${person.name}`,
+  // Añade nuevos .mdx en app/work para enumerarlos en /home y /work
 };
 
 const gallery = {
-  label: "Gallery",
-  title: "My photo gallery",
-  description: `A photo collection by ${person.name}`,
-  // Images from https://pexels.com
+  label: "Galería",
+  title: "Galería",
+  description: `Colección de imágenes de ${person.name}`,
   images: [
     {
       src: "/images/gallery/img-01.jpg",

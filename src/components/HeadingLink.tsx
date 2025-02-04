@@ -21,7 +21,7 @@ export const HeadingLink: React.FC<HeadingLinkProps> = ({ id, level, children, s
       () => {
         addToast({
           variant: "success",
-          message: "Link copied to clipboard.",
+          message: "Enlace copiado al portapapeles.",
         });
       },
       () => {

@@ -95,18 +95,18 @@ const RouteGuard: React.FC<RouteGuardProps> = ({ children }) => {
     return (
       <Column paddingY="128" maxWidth={24} gap="24" center>
         <Heading align="center" wrap="balance">
-          This page is password protected
+          Página protegida por contraseña
         </Heading>
         <Column fillWidth gap="8" horizontal="center">
           <Input
             id="password"
-            label="Password"
+            label="Contraseña"
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             errorMessage={error}
           />
-          <Button onClick={handlePasswordSubmit}>Submit</Button>
+          <Button onClick={handlePasswordSubmit}>Entrar</Button>
         </Column>
       </Column>
     );

@@ -1,45 +1,50 @@
 ---
-title: "Building Once UI, a Customizable Design System"
+title: "Astrova: ERP, CRM y POS Integrado para Empresas en Crecimiento"
 publishedAt: "2024-04-08"
-summary: "Development of a flexible and highly customizable design system using Next.js for front-end and Figma for design collaboration."
+summary: "Desarrollo de Astrova, un ERP modular con CRM y POS integrado, diseñado para empresas que buscan eficiencia en gestión de ventas, clientes e inventarios. Implementado con Next.js, Strapi y Amazon Aurora."
 images:
-  - "/images/projects/project-01/cover-01.jpg"
-  - "/images/projects/project-01/cover-02.jpg"
-  - "/images/projects/project-01/cover-03.jpg"
-  - "/images/projects/project-01/cover-04.jpg"
+  - "/images/projects/astrova/astrova_screens.jpg"
+  - "/images/projects/astrova/astrova_screen_2-80.jpg"
 team:
-  - name: "Selene Yu"
-    role: "Software Engineer"
-    avatar: "/images/avatar.jpg"
-    linkedIn: "https://www.linkedin.com/company/once-ui/"
-  - name: "Jane Smith"
-    role: "Product Manager"
-    avatar: "/images/projects/project-01/avatar-01.png"
-    linkedIn: "https://www.linkedin.com/company/once-ui/"
+  - name: "Lato Agency"
+    role: "Desarrollo y Diseño"
+    avatar: "/images/logo/profile_bck.png"
+    linkedIn: "https://www.linkedin.com/company/lato-agency/"
+  - name: "Gabriel Soto"
+    role: "Project Manager"
+    avatar: "/images/logo/astrova_logo_condensed.png"
+    linkedIn: "https://www.linkedin.com/company/lato-agency/"
 ---
 
-## Overview
+## Visión General
 
-Development of a flexible and highly customizable design system using Next.js for front-end and Figma for design collaboration.
+**Astrova** es un **ERP** modular que integra funcionalidades de **CRM** y **POS**, diseñado para empresas que buscan **agilizar sus operaciones, centralizar su información y escalar de manera eficiente**. 
 
-## Key Features
+Desarrollamos **Astrova** con un enfoque en la escalabilidad, asegurando que cada empresa pueda personalizar su instancia sin perder rendimiento. Además, utilizamos una arquitectura multi-tenant con **Amazon Aurora**, permitiendo que múltiples clientes utilicen el sistema sin comprometer la seguridad ni la independencia de sus datos.
 
-- **Component Library**: Built a set of modular, reusable UI components using React and styled-components in Next.js, focusing on accessibility and responsiveness.
-- **Theming and Customization**: Integrated a theming system that allows easy switching and customization of color palettes, typography, and layout styles using CSS variables and Figma tokens.
-- **Figma Integration**: Collaborated closely with designers by setting up a shared design library in Figma. This library was synchronized with the codebase, ensuring design handoffs were seamless and that design tokens remained consistent across both platforms.
-- **Documentation and Usage Guidelines**: Developed comprehensive documentation with Storybook to showcase components, usage patterns, and best practices, ensuring the design system is easy to adopt by other teams.
+## Características Clave
 
-## Technologies Used
+- **ERP Modular**: Módulos personalizables para finanzas, recursos humanos, inventario y gestión de proyectos.
+- **CRM Integrado**: Seguimiento de clientes, automatización de ventas y gestión de oportunidades en una interfaz intuitiva.
+- **POS con Soporte para Múltiples Sucursales**: Punto de venta moderno con gestión de caja, stock en tiempo real y facturación digital.
+- **Autenticación Segura y Control de Accesos**: Roles y permisos configurables por usuario, con integración de autenticación vía **Supabase Auth**.
+- **Dashboard Analítico en Tiempo Real**: Reportes detallados y KPIs de negocio utilizando gráficos interactivos.
 
-- **Next.js**: For fast, server-rendered React applications.
-- **Figma**: For creating and managing design assets and prototypes.
-- **Styled-Components**: For styling React components with a modular, themable approach.
-- **Storybook**: For building an interactive, documented component library.
+## Tecnologías Utilizadas
 
-## Challenges and Learnings
+- **Next.js**: Para el desarrollo del front-end con SSR y SSG para máxima optimización.
+- **Strapi**: CMS Headless para gestión de contenido, usuarios y seguridad de endpoints.
+- **Amazon Aurora**: Base de datos escalable con arquitectura multi-tenant.
+- **Tailwind CSS**: Para un diseño UI/UX limpio, rápido y flexible.
+- **Supabase**: Para autenticación y almacenamiento de datos en tiempo real.
+- **GSAP**: Para animaciones fluidas en la interfaz.
 
-One key challenge was balancing the need for flexibility with the desire to maintain design consistency. The solution involved creating well-defined design tokens and establishing clear guidelines for when and how components could be customized. Additionally, setting up effective collaboration workflows between designers and developers using Figma and Git was a learning experience that greatly improved the process.
+## Desafíos y Aprendizajes
 
-## Outcome
+Uno de los principales desafíos fue **garantizar la escalabilidad del sistema multi-tenant**, asegurando que cada cliente tuviera su propia instancia de datos sin afectar el rendimiento global. Para ello, utilizamos **Amazon Aurora** con particionamiento de bases de datos.
 
-The design system is now actively used across multiple projects, leading to faster development cycles, fewer design inconsistencies, and improved collaboration between design and development teams. It has become a foundation for scaling our products efficiently while ensuring a cohesive user experience.
+Otro reto fue la **sincronización entre el CRM y el POS**, asegurando que las ventas en el punto de venta actualizaran instantáneamente el estado de clientes y facturación en el CRM. Implementamos **WebSockets** y triggers en la base de datos para lograr una sincronización en tiempo real.
+
+## Resultados
+
+Desde su implementación, Astrova ha sido adoptado por **más de 30 empresas**, permitiéndoles reducir su carga operativa en **un 50%** y mejorar la eficiencia en la gestión de clientes y ventas. Gracias a su modularidad, cada empresa puede **personalizar su ERP sin necesidad de desarrollos adicionales**, escalando su negocio con flexibilidad.
