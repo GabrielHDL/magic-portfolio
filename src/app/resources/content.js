@@ -35,7 +35,7 @@ const social = [
   {
     name: "Instagram",
     icon: "instagram",
-    link: "https://www.instagram.com/latoagency",
+    link: "https://www.instagram.com/lato.agency",
   },
   // {
   //   name: "LinkedIn",
@@ -61,7 +61,9 @@ const home = {
   headline: <>Agencia Digital Creativa</>,
   subline: (
     <>
-      Somos Lato Agency, con sede en la Ciudad de México, donde diseñamos experiencias intuitivas que fusionan branding, ingeniería de software y marketing digital para potenciar marcas y negocios en el mundo digital.
+      Somos Lato Agency, con sede en la Ciudad de México, donde diseñamos
+      experiencias intuitivas que fusionan branding, ingeniería de software y
+      marketing digital para potenciar marcas y negocios en el mundo digital.
     </>
   ),
 };
@@ -88,9 +90,9 @@ const about = {
       <>
         Lato Agency es una agencia digital creativa con sede en la Ciudad de
         México, especializada en branding e ingeniería de software. Nuestro
-        objetivo es convertir retos complejos en soluciones ágiles y
-        atractivas, abarcando interfaces digitales, experiencias interactivas y
-        la convergencia entre diseño y tecnología.
+        objetivo es convertir retos complejos en soluciones ágiles y atractivas,
+        abarcando interfaces digitales, experiencias interactivas y la
+        convergencia entre diseño y tecnología.
       </>
     ),
   },
@@ -104,7 +106,9 @@ const about = {
         role: "Agencia Digital Creativa",
         achievements: [
           <>
-            En 2023 evolucionamos de <strong>Houdle</strong> a <strong>Lato</strong> para adaptarnos a las nuevas tecnologías y tendencias del mercado.
+            En 2023 evolucionamos de <strong>Houdle</strong> a{" "}
+            <strong>Lato</strong> para adaptarnos a las nuevas tecnologías y
+            tendencias del mercado.
           </>,
           <>
             Hemos colaborado con marcas para crear y desarrollar identidades
@@ -131,13 +135,16 @@ const about = {
         role: "Agencia Digital y Software",
         achievements: [
           <>
-            Durante esta etapa, consolidamos una agencia con un enfoque en branding, diseño y desarrollo de software.
+            Durante esta etapa, consolidamos una agencia con un enfoque en
+            branding, diseño y desarrollo de software.
           </>,
           <>
-            Creamos estrategias digitales innovadoras para marcas emergentes y consolidadas, optimizando su posicionamiento en el mercado.
+            Creamos estrategias digitales innovadoras para marcas emergentes y
+            consolidadas, optimizando su posicionamiento en el mercado.
           </>,
           <>
-            Implementamos soluciones tecnológicas personalizadas, enfocadas en UI/UX y escalabilidad.
+            Implementamos soluciones tecnológicas personalizadas, enfocadas en
+            UI/UX y escalabilidad.
           </>,
         ],
         images: [],
@@ -161,7 +168,7 @@ const about = {
       },
     ],
   },
-  
+
   studies: {
     display: false,
     title: "Studies",
@@ -172,7 +179,9 @@ const about = {
       },
       {
         name: "Especializaciones en Branding",
-        description: <>Cursos y diplomados en marketing online y estrategia de marca.</>,
+        description: (
+          <>Cursos y diplomados en marketing online y estrategia de marca.</>
+        ),
       },
     ],
   },
@@ -182,7 +191,11 @@ const about = {
     skills: [
       {
         title: "React",
-        description: <>Construimos interfaces dinámicas y altamente interactivas con React.</>,
+        description: (
+          <>
+            Construimos interfaces dinámicas y altamente interactivas con React.
+          </>
+        ),
         images: [
           {
             src: "/images/stack/react/1_qksBcJJdqxLgDGsywG8lQQ.webp",
@@ -200,7 +213,12 @@ const about = {
       },
       {
         title: "Next.js",
-        description: <>Creamos aplicaciones de alto rendimiento con Next.js, optimizando SEO y carga rápida.</>,
+        description: (
+          <>
+            Creamos aplicaciones de alto rendimiento con Next.js, optimizando
+            SEO y carga rápida.
+          </>
+        ),
         images: [
           {
             src: "/images/stack/nextjs/nextjs3.webp",
@@ -212,7 +230,9 @@ const about = {
       },
       {
         title: "Laravel",
-        description: <>Desarrollamos backends robustos y escalables con Laravel.</>,
+        description: (
+          <>Desarrollamos backends robustos y escalables con Laravel.</>
+        ),
         images: [
           {
             src: "/images/stack/laravel/0_oUyjZH6_leRq64sQ.png",
@@ -224,7 +244,12 @@ const about = {
       },
       {
         title: "Tailwind CSS",
-        description: <>Creamos diseños modernos y responsivos con Tailwind CSS para una mejor experiencia de usuario.</>,
+        description: (
+          <>
+            Creamos diseños modernos y responsivos con Tailwind CSS para una
+            mejor experiencia de usuario.
+          </>
+        ),
         images: [
           {
             src: "/images/stack/tailwindcss/64b524021adc5990918944.png",
@@ -242,7 +267,12 @@ const about = {
       },
       {
         title: "Strapi",
-        description: <>Utilizamos Strapi como CMS Headless para la gestión de contenido flexible y eficiente.</>,
+        description: (
+          <>
+            Utilizamos Strapi como CMS Headless para la gestión de contenido
+            flexible y eficiente.
+          </>
+        ),
         images: [
           {
             src: "/images/stack/strapi/meta.CuOjROfl_2ooYIw.webp",
@@ -254,7 +284,12 @@ const about = {
       },
       {
         title: "Inteligencia Artificial (IA)",
-        description: <>Desarrollamos soluciones con IA para automatización, análisis predictivo y asistentes conversacionales.</>,
+        description: (
+          <>
+            Desarrollamos soluciones con IA para automatización, análisis
+            predictivo y asistentes conversacionales.
+          </>
+        ),
         images: [
           {
             src: "/images/stack/ia/GettyImages-1462188043-e1686340799615.webp",
@@ -266,11 +301,21 @@ const about = {
       },
       {
         title: "Machine Learning",
-        description: <>Implementamos modelos de Machine Learning para análisis de datos y personalización de experiencias.</>,
+        description: (
+          <>
+            Implementamos modelos de Machine Learning para análisis de datos y
+            personalización de experiencias.
+          </>
+        ),
       },
       {
         title: "Illustrator",
-        description: <>Creamos gráficos vectoriales de alta calidad para branding y diseño digital.</>,
+        description: (
+          <>
+            Creamos gráficos vectoriales de alta calidad para branding y diseño
+            digital.
+          </>
+        ),
         images: [
           {
             src: "/images/stack/illustrator/illustrator.png",
@@ -282,7 +327,11 @@ const about = {
       },
       {
         title: "Photoshop",
-        description: <>Edición avanzada de imágenes y retoque digital con Adobe Photoshop.</>,
+        description: (
+          <>
+            Edición avanzada de imágenes y retoque digital con Adobe Photoshop.
+          </>
+        ),
         images: [
           {
             src: "/images/stack/photoshop/photoshop.png",
@@ -294,7 +343,12 @@ const about = {
       },
       {
         title: "Adobe Premiere Pro",
-        description: <>Edición y postproducción de videos profesionales con Adobe Premiere Pro.</>,
+        description: (
+          <>
+            Edición y postproducción de videos profesionales con Adobe Premiere
+            Pro.
+          </>
+        ),
         images: [
           {
             src: "/images/stack/premiere/premiere.jpeg",
@@ -306,7 +360,9 @@ const about = {
       },
       {
         title: "Cinema 4D",
-        description: <>Modelado y animación 3D para renders y contenido visual.</>,
+        description: (
+          <>Modelado y animación 3D para renders y contenido visual.</>
+        ),
         images: [
           {
             src: "/images/stack/cinema4d/7f056e_04220e7cf28e487cb154d589445a5961~mv2.jpg",
@@ -318,7 +374,12 @@ const about = {
       },
       {
         title: "Adobe XD",
-        description: <>Diseño de interfaces de usuario y prototipos interactivos con Adobe XD.</>,
+        description: (
+          <>
+            Diseño de interfaces de usuario y prototipos interactivos con Adobe
+            XD.
+          </>
+        ),
         images: [
           {
             src: "/images/stack/adobe-xd/Adobe-XD-CC-Featured-Image.png.webp",
@@ -329,7 +390,7 @@ const about = {
         ],
       },
     ],
-  },  
+  },
 };
 
 const blog = {
