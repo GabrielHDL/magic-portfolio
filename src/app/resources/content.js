@@ -50,7 +50,7 @@ const social = [
   {
     name: "Email",
     icon: "email",
-    link: "mailto:hola@lato.agency",
+    link: "mailto:hola@lato.mx",
   },
 ];
 
